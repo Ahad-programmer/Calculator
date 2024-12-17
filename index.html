@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Introduction To Project <span>Calculator</span></h2>
+        <div class="slider">
+            <div class="slide fade">
+                <img src="./pic1.jpg" alt="Image 1">
+            </div>
+            <div class="slide fade">
+                <img src="./IMG-20241217-WA0044.jpg" alt="Image 2">
+            </div>
+            <div class="slide fade">
+                <img src="./IMG-20241217-WA0073.jpg" alt="Image 3">
+            </div>
+            <!-- Additional images -->
+        </div>
+        
+        <div class="content">
+            <div class="calculator">
+                <input type="text" id="display" disabled>
+                <div class="buttons">
+                    <button class="btn" onclick="appendtodisplay('1')">1</button>
+                    <button class="btn" onclick="appendtodisplay('2')">2</button>
+                    <button class="btn" onclick="appendtodisplay('3')">3</button>
+                    <button class="btn op" onclick="appendtodisplay('+')">+</button>
+                    <button class="btn" onclick="appendtodisplay('4')">4</button>
+                    <button class="btn" onclick="appendtodisplay('5')">5</button>
+                    <button class="btn" onclick="appendtodisplay('6')">6</button>
+                    <button class="btn op" onclick="appendtodisplay('-')">-</button>
+                    <button class="btn" onclick="appendtodisplay('7')">7</button>
+                    <button class="btn" onclick="appendtodisplay('8')">8</button>
+                    <button class="btn" onclick="appendtodisplay('9')">9</button>
+                    <button class="btn op" onclick="appendtodisplay('*')">*</button>
+                    <button class="btn" onclick="appendtodisplay('0')">0</button>
+                    <button class="btn clear" onclick="clearDisplay()">C</button>
+                    <button class="btn op" onclick="calculate('=')">=</button>
+                    <button class="btn op" onclick="appendtodisplay('/')">/</button>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://mebs.edu.pk/wp-content/uploads/2023/01/cropped-MEB-final-for-web.png" alt="Image next to calculator">
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
